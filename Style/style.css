@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap');
+
+/*resetei o html, porque os navegadores vem*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
