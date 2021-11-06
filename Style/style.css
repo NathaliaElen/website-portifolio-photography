@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,13 +18,181 @@ h1, h2, h3{
     color: #000000;
 }
 
+/*inicio da navegação no menu principal*/
+.logo {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: "Yellowtail", sans-serif;
+    justify-content: space-between;
+    letter-spacing: 4px
+    
+}
+
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: #191970;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none; /*retira os marcadores*/
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: "Yellowtail", sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    cursor: pointer;
+    transition: .4s;
+}
 
 
+/*inicio do cabeçalho*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../Img/camera.jpg");
+    background-size: cover;/*irá cobrir todo espaço*/
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
 
+header h1{
+    color: #ffffff;
+}
+
+header p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+header .botao {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #191970;
+    font-size: .9em;
+    border-radius: 3px;
+}
+/*fechamento do cabeçalho*/
+
+/*inicio da seção sobre*/
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #191970;
+    color: #ffffff;
+}
+
+.sobre h2{
+    color: #ffffff;
+}
+
+.sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    text-align: justify;
+}
+
+.sobre .botao {
+    background-color: #f1f1f1;
+    color: #c1c1c1;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+/*fechamento da seção sobre*/
+
+/*inicio da seção serviços*/
+.serviços {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.serviços div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+/*fechameno da seção inicio*/
+
+/*inicio da seção fotos*/
+.fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.fotos h2{
+    margin-bottom: 20px;
+}
+
+.fotos {
+    width 100%;
+}
+/*fechamento da seção fotos*/
+
+/*inicio da seção contatos*/
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contatos {
+    color: #000000;
+}
+
+/*inicio do rodapé*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #191970;
+    color: #ffffff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #00FFFF;
+}
+/*fechameno do rodapé*/
