@@ -1,0 +1,90 @@
+@import url ('https://fonts.googleapis.com/css2? family = Asap: ital, wght @ 1.700 & family = Nunito: wght @ 700 & family = Roboto: ital, wght @ 0,100; 0,300; 0,400; 0,500; 0,700; 0,900; 1.100; 1.300; 1.400; 1.500; 1.700; 1.900 & family = Yellowtail & display = swap ');
+
+* { /*resetei o espaçamento de dentro (padding) e fora (margin) do conteúdo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*o valor border-box faz com que o navegador não calcule a dimensão dos elementos somando bordas e margens com altura e largura*/
+    font-family: "Roboto", sans-serif;/*tipo da fonte da minha tela de login*/
+}
+
+body {
+    background-color: coral;/*a cor de fundo é uma imagem*/
+    background-repeat: no-repeat; /*não repetir*/
+    background-size: cover; /*cobrir todo o espaço*/
+    background-attachment: fixed; /*cobre toda a tela*/
+}
+
+.container {
+    display: flex;/*o dispaly contra o layout*/
+    justify-content: center;/*colocou todo conteúdo no centro*/
+    width: 100%;/*largura de 100%*/
+    margin-top: 100px;/*espaçmento superior fora do conteúdo*/
+}
+
+.card {
+    background-color: #ffffff80;/*cor do fundo do card é branca, mas tem opacidade*/
+    padding: 30px;/*representa o espaçamento entre o conteúdo e a borda de um elemento*/
+    border-radius: 4%;/*arredondamento das bordas*/
+    box-shadow: 3px 3px 1px 0px #00000080;/*cria uma sombra nas bordas, valores: direita, inferior, esquerda, superior. a cor da sombra é preta, mas tem opacidade*/
+}
+
+h1 {
+    text-align: center;/*centralizou o meu título no centro do card*/
+    margin-bottom: 20px;/* deu um espaçamento inferior entre o título e a label*/
+    color: #272262;/*cor da letra do título*/
+}
+
+.label-float input { /*chamei o seletor input para formatar as duas caixas de textos ao mesmo tempo, assim fica mais homogeneo*/
+    width: 100%;/*largura de 100% considera todo o espaço*/
+    padding: 0%;/*sem espaçamento dentro do conteúdo*/
+    display: inline-block;/*está na mesma linha o conteúdo, mas se comporta como se fosse um bloco*/
+    border: 0;/*retirei as bordas da caixa de entrada*/
+    border-bottom: 2px solid #272262;
+    background-color: transparent;/*a cor de fundo do input é transparente*/
+    outline: none;/*a outline produz uma borda aparentemente quando clicamos com o mouse na caixa de texto, a propriedade none retirou isso.*/
+    min-width: 180px;/*largura minima*/
+    font-size: 16px;/*tamanho da letra*/
+    transition: all .3s ease-out;/*a transição tem 0.3s e vai ser de maneira leve por causa do ease-out*/
+    border-radius: 0;/*não tem arredondamento*/
+}
+
+.label-float {
+    position: relative;/*posicionamento relativo*/
+    padding-top: 13px;/*espaçamento superior entre uma caixa de texto e a outra*/
+    margin-top: 5%;/*espaçmento superior fora do conteúdo*/
+    margin-bottom: 5%;/*espaçamento inferior entre o input senha e o botão*/  
+}
+
+.label-float input:focus { /*mexendo no foco da caixa de texto*/
+    border-bottom: 2px solid #4038a0;/*largura, a cor vai ser sólida sem falhas, cor da borda inferior do input*/
+}
+
+.label-float label {
+    color: #272262;/*cor da letra*/
+    pointer-events: none;
+    position: absolute;/*é absoluto dentro de um espaço relativo*/
+    top: 0;/*superior*/
+    left: 0;/*esquerda*/
+    margin-top: 13px;/*espaçmento superior fora do conteúdo*/
+    transition: all .3s ease-out;/*a label vai subir de forma leve por causa do ease-out*/
+}
+
+.label-float input:focus + label {
+    font-size: 13px;/*quando eu dou um focus o tamanho da letra da label diminui*/
+    margin-top: 0;/*o espaçamento fora do conteúdo fica 0, ou seja, a label sobe*/
+    color: #4038a0;/*cor da letra da label*/
+}
+
+button {
+    background-color: transparent;/*cor do fundo do botão é transparente*/
+    border-color: #272262;/*cor da borda do botão*/
+    color: #272262;/*cor da letra*/
+    padding: 7px;/*espaçamento dentro do conteúdo e a borda*/
+    font-weight: bold;/*font-weiht especifica o peso ou intensidade da fonte. bold significa negrito*/
+    font-size: 12pt;/*tamanho da letra*/
+    margin-top: 20px;/*espaçamento superior fora do elemento, nesse caso entre o input senha e o botão*/
+    border-radius: 4px;/*arredondamento das bordas do botão*/
+    cursor: pointer;/*quando colocamos o mouse em cima o pointer deixa uma mãozinha como cursor*/
+}
+
+
