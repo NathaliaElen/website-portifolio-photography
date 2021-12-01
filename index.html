@@ -40,57 +40,81 @@
     <section class="serviços">
         <h2>Serviços</h2>
 
-        <div>
-            <img src="Img/p1.png" alt="Camera">
-            <h3>Fotografia</h3>
-            <p>Guarde momentos importantes com alta qualidade, como casamentos, formaturas, aniversários e muito mais.</p>
-        </div>
-
-        <div>
-            <img src="Img/p2.png" alt="Filme">
-            <h3>Edição de Vídeos</h3>
-            <p>Quer transformar alguma lembrança importante de sua vida em um vídeo emocionante, imagens com trilha sonora maravilhosa, possuindo textos e cores fantásticas? Fale comigo agora!</p>
-        </div>
-
-        <div>
-            <img src="Img/p3.png" alt="VideoPlayer">
-            <h3>Captação de Imagem</h3>
-            <p>Vai participar de algum evento importante em sua vida? Então, é importante recordar tudo a cada segundo para tornar tudo imortal.</p>
-        </div>
-
-        <div>
-            <img src="Img/p4.png" alt="Camera">
-            <h3>Tratamento de Imagem</h3>
-            <p>Tem alguma foto antiga ou que está com as cores meio triste. Talvez queira ficar com uma pele nova e um sorriso brilhante?</p>
-        </div>
-
-    </section>
-
-        <!--Seção de fotos-->
-        <section class="fotos">
-            <h2>Fotos</h2>
-            <img src="Img/ceu.jpg" alt="Céu">
-            <img src="Img/grama.jpg" alt="Grama">
-            <img src="Img/montanha.jpg" alt="Montanha">
-            <img src="Img/mar.jpg" alt="Mar">
-            <img src="Img/arvores.jpg" alt="Arvorés">
-            <img src="Img/ponte.jpg" alt="Ponte">
-        </section>
-
-        <!--Rodapé do site-->
-        <footer>
-            <a href="#topo">Voltar</a>
-            <p>Copyright &copy; 2021 - by Nathália Elen</p>
-
-            <div class="s-m">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+        <div id="servicos-style">
+            <div>
+                <img src="Img/p1.png" alt="Camera">
+                <h3>Fotografia</h3>
+                <p>Guarde momentos importantes com alta qualidade, como casamentos, formaturas, aniversários e muito mais.</p>
             </div>
 
-        </footer>
+            <div>
+                <img src="Img/p2.png" alt="Filme">
+                <h3>Edição de Vídeos</h3>
+                <p>Quer transformar alguma lembrança importante de sua vida em um vídeo emocionante, imagens com trilha sonora maravilhosa, possuindo textos e cores fantásticas? Fale comigo agora!</p>
+            </div>
+
+            <div>
+                <img src="Img/p3.png" alt="VideoPlayer">
+                <h3>Captação de Imagem</h3>
+                <p>Vai participar de algum evento importante em sua vida? Então, é importante recordar tudo a cada segundo para tornar tudo imortal.</p>
+            </div>
+
+            <div>
+                <img src="Img/p4.png" alt="Camera">
+                <h3>Tratamento de Imagem</h3>
+                <p>Tem alguma foto antiga ou que está com as cores meio triste. Talvez queira ficar com uma pele nova e um sorriso brilhante?</p>
+            </div>
+        </div>
+    </section>
+ 
+        <!--Seção de fotos-->
+        <section class="fotos" id="fotos">
+            <h2>Fotos</h2>
+            <div id="fotos-style"></div>
+                <img src="Img/ceu.jpg" alt="Céu">
+                <img src="Img/grama.jpg" alt="Grama">
+                <img src="Img/montanha.jpg" alt="Montanha">
+                <img src="Img/mar.jpg" alt="Mar">
+                <img src="Img/arvores.jpg" alt="Arvorés">
+                <img src="Img/ponte.jpg" alt="Ponte">
+            </div>       
+        </section>
+
+       <!--Rodapé do site-->
+       <footer id="footer-style">
+        <p>Copyright &copy; 2021 - by Nathália Elen</p>
+        <div class="s-m icons" >
+            <a href="https://www.facebook.com/nathalia.ellen.5458" target="blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="https://www.instagram.com/ops.nathalia/" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+       </footer>
+
+        <button type="button" class="scButton_default" onclick="goUp()" id="btn-back-to-top" title="Go to top">
+            <!--<i class="fas fa-arrow-up"></i>-->
+        </button>
+        
+        <script>
+            var scrollTopBtn = document.getElementById("btn-back-to-top");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollTopBtn.style.display = "block";
+                } else {
+                    scrollTopBtn.style.display = "none";
+                }
+            }
+            
+            
+            function goUp() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
   
 </body>
 </html>

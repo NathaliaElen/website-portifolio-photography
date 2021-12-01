@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: coral;/*a cor de fundo é uma imagem*/
+    background-color: url(/Img/ceu-mar-montanha.jpg);/*a cor de fundo é uma imagem*/
     background-repeat: no-repeat; /*não repetir*/
     background-size: cover; /*cobrir todo o espaço*/
     background-attachment: fixed; /*cobre toda a tela*/

@@ -137,30 +137,18 @@ header .botao {
 /*fechamento da seção sobre*/
 
 /*inicio da seção serviços*/
-.serviços {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+#servicos-style {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px 50px;   
 }
 
-.serviços div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 30px;
+#servicos-style p {
+    text-align: justify;
 }
-/*fechameno da seção inicio*/
+/*fechameno da seção serviços*/
 
 /*inicio da seção fotos*/
-.fotos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-}
-
 .fotos h2{
     margin-bottom: 20px;
 }
@@ -168,22 +156,27 @@ header .botao {
 .fotos {
     width 100%;
 }
-/*fechamento da seção fotos*/
 
-/*inicio da seção contatos*/
-.contatos {
+#fotos-style {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px 8px;
+    padding: 20px 10px;
+}
+/*fechamento da seçao fotos*/
+
+/*inicio contatos*/
+#contatos-styles {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 20px;
+    justify-content: space-around;  
 }
 
-.contatos {
-    color: #000000;
+#contatos-styles div {
+    margin: 20px;
 }
 
-/*inicio do rodapé*/
+/*inicio da seção rodapé*/
 footer {
     text-align: center;
     padding: 10px;
@@ -195,4 +188,44 @@ footer a {
     text-decoration: none;
     color: #00FFFF;
 }
-/*fechameno do rodapé*/
+
+#footer-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+}
+
+
+#footer-style .icons{
+    font-size: 25px;
+}
+
+#footer-style .icons a{
+    margin: 0 15px;
+}
+/*fechameno da seção rodapé*/
+
+* {
+    scroll-behavior: smooth;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    *border-radius: 2rem;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+#btn-back-to-top::after {
+    content: '\1F815';
+    font-size: 1.7rem;
+}
+
+/*início da responsividade*/
