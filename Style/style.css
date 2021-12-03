@@ -25,14 +25,28 @@ h1, h2, h3{
     font-size: 32px;
     font-family: "Yellowtail", sans-serif;
     justify-content: space-between;
-    letter-spacing: 4px
+    align-items: center;
+    letter-spacing: 4px;
+    margin-left: 50px;
     
 }
 
-nav {
+.container{
     display: flex;
+    justify-content: space-between;
+
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    /* display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content:  ;
+    align-items: center; */
     background-color: #191970;
 }
 
@@ -42,18 +56,19 @@ nav ul {
     align-items: center;
     list-style: none; /*retira os marcadores*/
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 nav ul li {
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
+    padding: 10px;
 }
 
 nav ul li a {
     display: inline-block;
     padding: 10px 0;
-    width: 100%;
+    /* width: 100%; */
     text-decoration: none;
     color: #ffffff;
 }
@@ -119,10 +134,12 @@ header .botao {
 
 .sobre h2{
     color: #ffffff;
+    
 }
 
 .sobre p {
-    margin-bottom: 2.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     max-width: 1000px;
     text-align: justify;
 }
@@ -137,31 +154,58 @@ header .botao {
 /*fechamento da seção sobre*/
 
 /*inicio da seção serviços*/
+
+.servicos{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
 #servicos-style {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0px 50px;   
 }
 
+.pos-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
 #servicos-style p {
     text-align: justify;
 }
+
+
 /*fechameno da seção serviços*/
 
 /*inicio da seção fotos*/
 .fotos h2{
-    margin-bottom: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.fotos img{
+    max-width: 100%;
+    border-radius: 5px;
 }
 
 .fotos {
-    width 100%;
+    /* width: 100%; */
+    background-color: #191970;
 }
+
 
 #fotos-style {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px 8px;
-    padding: 20px 10px;
+    grid-gap: 15px 15px;
+    padding:  20px 50px;
 }
 /*fechamento da seçao fotos*/
 
@@ -180,7 +224,7 @@ header .botao {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #191970;
+    background-color: black;
     color: #ffffff;
 }
 
