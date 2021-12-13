@@ -69,7 +69,8 @@ h1 {
     transition: all .3s ease-out;/*a label vai subir de forma leve por causa do ease-out*/
 }
 
-.label-float input:focus + label {
+.label-float input:focus + label,
+.label-float input:valid + label {
     font-size: 13px;/*quando eu dou um focus o tamanho da letra da label diminui*/
     margin-top: 0;/*o espaçamento fora do conteúdo fica 0, ou seja, a label sobe*/
     color: #4038a0;/*cor da letra da label*/
@@ -85,6 +86,37 @@ button {
     margin-top: 20px;/*espaçamento superior fora do elemento, nesse caso entre o input senha e o botão*/
     border-radius: 4px;/*arredondamento das bordas do botão*/
     cursor: pointer;/*quando colocamos o mouse em cima o pointer deixa uma mãozinha como cursor*/
+    outline: none;/**/
+    transition: all .4s ease-out;
 }
 
+button:hover{
+    background-color: #272262;/*cor de fundo do botão*/
+    color: white;/*cor da letra*/
+}
+.justify-center{
+    display: flex;/*layout do botão*/
+    justify-content: center;
+}
 
+hr {
+    margin-top: 10%;/*espaçamento fora do conteúdo do topo*/
+    margin-bottom: 10%;/*espaçamento fora do conteúdo inferior*/
+    width: 60%;/*largura*/
+}
+
+p {
+    color: #272262;/*cor da letra*/
+    font-size: 14pt;/*tamanho da letra*/
+    text-align: center;/*centralizar o texto*/
+}
+
+a {
+    color: #7a3077;/*cor da letra*/
+    font-weight: bold;/*colocar o link em negrito*/
+    text-decoration: none;/*tirou o sublinhado do link*/
+} 
+
+a:hover {
+    color: #272262;/*cor da letra*/
+}

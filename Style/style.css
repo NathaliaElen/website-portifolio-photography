@@ -143,14 +143,6 @@ header .botao {
     max-width: 1000px;
     text-align: justify;
 }
-
-.sobre .botao {
-    background-color: #f1f1f1;
-    color: #c1c1c1;
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 3px;
-}
 /*fechamento da seção sobre*/
 
 /*inicio da seção serviços*/
@@ -271,5 +263,3 @@ footer a {
     content: '\1F815';
     font-size: 1.7rem;
 }
-
-/*início da responsividade*/
