@@ -1,8 +1,8 @@
 <?php
-$servidor = "localhost";
+$servidor = "localhost:3306";
 $usuario = "root";
 $senha = "";//não tem senha
-$dbname = "test";//nome do banco de dados lá no xampp
+$dbname = "cadastro";//nome do banco de dados lá no xampp
 
 //Criar a conexao
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);

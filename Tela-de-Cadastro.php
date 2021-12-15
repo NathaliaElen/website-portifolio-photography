@@ -22,7 +22,7 @@ session_start();
 
     <div class="form_cd">
     <h2>Cadastra usuario</h2>
-      <form method="post" action="index.php">
+      <form method="post" action="Tela-de-Cadastro.php">
      <!-- inserido o metodo post para mostra a tela paras se cadastrar e informa a ação que foi feita que saiu da pagina inicial index.php e veio para esta de cadastro-->
             <label>Nome: </label> <!--informar aonde fica o nome para o cliente digitar-->
             <input type="text" name="nome" placeholder="Digite o nome completo"><br><br><!--serve para adicionar a barra de preenchimento do nome completo-->
@@ -35,19 +35,7 @@ session_start();
         
             <label>Cidade: </label>
             <input type="text" name="cidade" placeholder="Informe a cidade"><br><br>
-        
-            <label>Bairro: </label>
-            <input type="text" name="bairro" placeholder="Informe o bairro"><br><br>
-
-            <label>CEP: </label>
-            <input type="number" name="cep" placeholder="Informe o CEP"><br><br>
-
-            <label>Numero: </label>
-            <input type="number" name="num" placeholder="Informe o numero da casa"><br><br>
-
-            <input type="radio" name=myradio value="1">Masculino <!-- type radio para escolher entre os generos -->
-            <input type="radio" name=myradio value="2">Feminino <br><br>
-
+            
             <input class="btn btn-cadastro" type="submit" value="Cadastrar"> <!-- coloquei a classe btn-cadastro para modificar o botão 
             (submit para direcionar quando terminar de preencher com o nome (vaalue) cadastra -->
             <input class="btn btn-cadastro" type="reset" value="Limpa">
